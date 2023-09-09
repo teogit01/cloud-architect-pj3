@@ -1,5 +1,10 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Poor practice 1
+Public subnet will allow all connection to access.
 
 # Poor practice 2
+Privelege business user should not directly access S3, instead we should set IAM role for user to access S3
+
+# Poor practice 3
+Should use https for security instead of http

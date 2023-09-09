@@ -1,0 +1,32 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Tools: 
+- Regula
+- Terrascan
+- Chef Inspect
+
+### Example vulnerability
+- Regula: IAM policies with full "*:*" administrative privileges
+- Terrascan : Ingress open to 0.0.0.0/0
+- Chef Inspect: Should have MFA enabled
+
+##Scan AMI’s or containers for OS vulnerabilities
+- Clair
+- Trivy
+- Anchore
+
+### Example vulnerability
+- Clair: Read/write access of root/.rhosts only by root
+- Trivy: It could find that a specific version of a library has a known security flaw. 
+- Anchore: It could detect that a specific version of OpenSSL has a known security vulnerability.
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config
+- AWS Inspector 
+- AWS GuardDuty
+
+### Example vulnerability
+- AWS Config: Enable the S3 Block Public Access setting.
+- AWS Inspector: The potential to allow unauthorized access and execution of malicious code.
+- AWS GuardDuty: By guessing the SSH password, brute force assaults are used to obtain unwanted access to your instance.
